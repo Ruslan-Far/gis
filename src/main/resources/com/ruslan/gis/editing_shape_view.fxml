@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.ruslan.gis.EditingShapeController"
+            prefHeight="382.0" prefWidth="357.0">
+    <children>
+        <TextField fx:id="shapeTextField" layoutX="124.0" layoutY="65.0" />
+        <TextField fx:id="lengthTextField" layoutX="124.0" layoutY="118.0" />
+        <TextField fx:id="squareTextField" layoutX="124.0" layoutY="169.0" />
+        <TextField fx:id="perimeterTextField" layoutX="124.0" layoutY="222.0" />
+        <Label layoutX="39.0" layoutY="69.0" text="Фигура" />
+        <Label layoutX="39.0" layoutY="122.0" text="Длина" />
+        <Label layoutX="39.0" layoutY="173.0" text="Площадь" />
+        <Label layoutX="39.0" layoutY="226.0" text="Периметр" />
+        <Button layoutX="102.0" layoutY="319.0" mnemonicParsing="false" prefWidth="80" text="ОК" onAction="#onClickOkBtn" />
+        <Button layoutX="193.0" layoutY="319.0" mnemonicParsing="false" prefWidth="80" text="Отмена" onAction="#onClickCancelBtn" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="536.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ruslan.gis.RegistrationImageController">
+   <children>
+      <Button layoutX="516.0" layoutY="86.0" mnemonicParsing="false" onAction="#onClickDeleteBtn" prefWidth="70" text="Удалить" AnchorPane.rightAnchor="27.600000000000023" AnchorPane.topAnchor="86.0" />
+      <Button layoutX="311.0" layoutY="434.0" mnemonicParsing="false" onAction="#onClickCancelBtn" prefWidth="70" text="Отмена" AnchorPane.bottomAnchor="17.4" AnchorPane.rightAnchor="232.99999999999997" />
+      <Button layoutX="233.0" layoutY="434.0" mnemonicParsing="false" onAction="#onClickOkBtn" prefWidth="70" text="ОК" AnchorPane.bottomAnchor="17.4" />
+      <ScrollPane layoutY="132.0" prefHeight="287.0" prefWidth="614.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <ImageView fx:id="scaleMapImageView" fitHeight="NaN" fitWidth="NaN" layoutX="64.0" layoutY="107.0" preserveRatio="true" />
+      </ScrollPane>
+      <Button layoutX="564.0" layoutY="440.0" mnemonicParsing="false" onAction="#onClickZoomOutBtn" prefHeight="30" prefWidth="30" text="-" />
+      <Button layoutX="521.0" layoutY="440.0" mnemonicParsing="false" onAction="#onClickZoomInBtn" prefHeight="30" prefWidth="30" text="+" />
+      <ScrollPane prefHeight="131.0" prefWidth="489.0">
+          <TableView fx:id="pointsTableView" prefHeight="124.0" prefWidth="483.0">
+            <columnResizePolicy>
+               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+          </TableView>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ruslan.gis.AddingBreakpointController">
+   <children>
+      <Button layoutX="60.0" layoutY="329.0" mnemonicParsing="false" prefWidth="80" text="ОК" onAction="#onClickOkBtn" />
+      <Button layoutX="155.0" layoutY="329.0" mnemonicParsing="false" prefWidth="80" text="Отмена" onAction="#onClickCancelBtn" />
+      <Label layoutX="60.0" layoutY="60.0" text="Точка" />
+      <Label layoutX="60.0" layoutY="111.0" text="X на карте" />
+      <Label layoutX="60.0" layoutY="162.0" text="Y на карте" />
+      <Label layoutX="60.0" layoutY="212.0" text="X на растре" />
+      <Label layoutX="60.0" layoutY="263.0" text="Y на растре" />
+      <TextField fx:id="nameTextField" layoutX="137.0" layoutY="56.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="xgeoTextField" layoutX="137.0" layoutY="107.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="ygeoTextField" layoutX="137.0" layoutY="158.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="xrectTextField" layoutX="137.0" layoutY="208.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="yrectTextField" layoutX="137.0" layoutY="259.0" prefHeight="26.0" prefWidth="98.0" />
+   </children>
+</AnchorPane>

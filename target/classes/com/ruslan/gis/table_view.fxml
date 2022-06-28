@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="405.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ruslan.gis.TableController">
+    <ScrollPane prefHeight="405.0" prefWidth="486.0">
+        <TableView fx:id="shapesTableView" prefHeight="399.0" prefWidth="478.0">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+    </ScrollPane>
+    <Button onAction="#onClickDeleteBtn" layoutX="500.0" layoutY="214.0" mnemonicParsing="false" prefWidth="100"
+            text="Удалить"/>
+    <Button onAction="#onClickEditBtn" layoutX="500.0" layoutY="263.0" mnemonicParsing="false" prefWidth="100"
+            text="Редактировать"/>
+    <Button onAction="#onClickAddBtn" layoutX="500.0" layoutY="314.0" mnemonicParsing="false" prefWidth="100"
+            text="Добавить"/>
+    <Button onAction="#onClickCloseBtn" layoutX="500.0" layoutY="365.0" mnemonicParsing="false" prefWidth="100"
+            text="Закрыть"/>
+</AnchorPane>
